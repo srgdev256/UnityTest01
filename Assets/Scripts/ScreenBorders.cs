@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ScreenBorders : MonoBehaviour
 {
+    
     public static float Left => -_instance._camera.orthographicSize * _instance._camera.aspect;
     public static float Right => _instance._camera.orthographicSize * _instance._camera.aspect;
     public static float Top => _instance._camera.orthographicSize;
