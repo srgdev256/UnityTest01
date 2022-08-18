@@ -21,5 +21,18 @@ public class ScreenBorders : MonoBehaviour
     }
 
 
+    public static Vector2 GetRandomPoint()
+    {
+        //todo
+        return Vector2.zero;
+    }
+
+
+    public static Vector2 GetRandomPoint(float radius)
+    {
+        //todo
+        return Vector2.zero;
+    }
+
 
 }
