@@ -229,11 +229,9 @@ GameObject:
   m_Component:
   - component: {fileID: 617984615}
   - component: {fileID: 617984614}
-  - component: {fileID: 617984616}
   - component: {fileID: 617984617}
   - component: {fileID: 617984618}
   - component: {fileID: 617984619}
-  - component: {fileID: 617984620}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -306,19 +304,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &617984616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 617984613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a151143201708042b3ed6ed4e4d90fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 4.2
 --- !u!114 &617984617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,16 +343,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 4.5
---- !u!114 &617984620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 617984613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b39833075c0f8b4a980b09278af30d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 0
