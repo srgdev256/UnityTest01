@@ -20,4 +20,10 @@ public static class MathHelpers
 		float y = Mathf.Sin(angle);
 		return new Vector2(x * magnitude, y * magnitude);
 	}
+
+
+	public static Vector2 ToVector2(Vector3 src)
+	{
+		return new Vector2(src.x, src.y);
+	}
 }

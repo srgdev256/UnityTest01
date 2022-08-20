@@ -24,7 +24,6 @@ public class DiagonalMovement : MonoBehaviour
 
     private void Update()
     {
-        float delta = _speed * Time.deltaTime;
 
         float radius = transform.localScale.x * 0.5f;
 
@@ -41,7 +40,6 @@ public class DiagonalMovement : MonoBehaviour
             { 
                 _direction = Direction.DownRight;
             }
-            
             else
             {
                 _direction = Direction.DownLeft;
@@ -90,6 +88,8 @@ public class DiagonalMovement : MonoBehaviour
         
         //moving
         Vector3 moveDelta = Vector3.zero;
+        
+        float delta = _speed * Time.deltaTime;
         
         switch (_direction)
         {
