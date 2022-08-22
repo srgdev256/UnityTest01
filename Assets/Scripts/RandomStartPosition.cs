@@ -6,9 +6,7 @@ public class RandomStartPosition : MonoBehaviour
 {
     private void Awake()
     {
-        float randomX = Random.Range(ScreenBorders.Left, ScreenBorders.Right);
-        float randomY = Random.Range(ScreenBorders.Bottom, ScreenBorders.Top);
-
-        transform.position = new Vector3(randomX, randomY, 0.0f);
+        float radius = transform.localScale.x * 0.5f;
+        transform.position = ScreenBorders.GetRandomPoint(radius);
     }
 }

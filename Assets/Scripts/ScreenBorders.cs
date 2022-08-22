@@ -23,15 +23,21 @@ public class ScreenBorders : MonoBehaviour
 
     public static Vector2 GetRandomPoint()
     {
-        //todo
-        return Vector2.zero;
+        float randomX = Random.Range(Left, Right);
+        float randomY = Random.Range(Bottom, Top);
+
+        Vector2 result = new Vector2(randomX, randomY);
+        return result;
     }
 
 
     public static Vector2 GetRandomPoint(float radius)
     {
-        //todo
-        return Vector2.zero;
+        float randomX = Random.Range(Left+radius, Right-radius);
+        float randomY = Random.Range(Bottom+radius, Top-radius);
+        
+        Vector2 result = new Vector2(randomX, randomY);
+        return result;
     }
 
 
