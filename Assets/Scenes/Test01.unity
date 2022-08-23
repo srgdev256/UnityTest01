@@ -231,7 +231,8 @@ GameObject:
   - component: {fileID: 617984614}
   - component: {fileID: 617984617}
   - component: {fileID: 617984618}
-  - component: {fileID: 617984616}
+  - component: {fileID: 617984619}
+  - component: {fileID: 617984620}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -280,7 +281,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 0.9433962, g: 0.75450987, b: 0.36845848, a: 1}
+  m_Color: {r: 0.8490566, g: 0.07529365, b: 0.51139164, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -304,19 +305,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &617984616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 617984613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: faa9620e6e019aa4dbaa8b2d41d4ab32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 3.46
 --- !u!114 &617984617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,6 +331,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sizeMin: 1
   _sizeMax: 3
+--- !u!114 &617984619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617984613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14109ee48de4f0d47b1306b2de533116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hueMin: 0.1
+  hueMax: 1
+--- !u!114 &617984620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617984613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f12e7e06998a5949916e7270f1f9e17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetChangePeriod: 5.1
+  _speed: 3.1
 --- !u!1 &848197046
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,7 +371,8 @@ GameObject:
   - component: {fileID: 848197050}
   - component: {fileID: 848197049}
   - component: {fileID: 848197048}
-  - component: {fileID: 848197047}
+  - component: {fileID: 848197052}
+  - component: {fileID: 848197053}
   m_Layer: 0
   m_Name: Circle (1)
   m_TagString: Untagged
@@ -363,19 +380,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &848197047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 848197046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: faa9620e6e019aa4dbaa8b2d41d4ab32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 3.46
 --- !u!114 &848197048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,7 +447,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 0.94509804, g: 0.36862743, b: 0.4607818, a: 1}
+  m_Color: {r: 0.94509804, g: 0.6691387, b: 0.36862743, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -467,3 +471,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &848197052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848197046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14109ee48de4f0d47b1306b2de533116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hueMin: 0
+  hueMax: 360
+--- !u!114 &848197053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848197046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f12e7e06998a5949916e7270f1f9e17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetChangePeriod: 4.8
+  _speed: 2
